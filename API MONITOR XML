@@ -1,0 +1,88 @@
+<!-- 
+	API Monitor Filter
+	(c) 2010-2013, Rohitab Batra <rohitab@rohitab.com>
+	http://www.rohitab.com/apimonitor/
+	 -->
+<ApiMonitor>
+<CaptureFilter>
+<Module Name="Advapi32.dll">
+<Api Name="RegCloseKey"/>
+<Api Name="RegCreateKeyExA"/>
+<Api Name="RegCreateKeyExW"/>
+<Api Name="RegOpenKeyExA"/>
+<Api Name="RegOpenKeyExW"/>
+<Api Name="RegQueryValueExA"/>
+<Api Name="RegQueryValueExW"/>
+<Api Name="RegSetValueExA"/>
+<Api Name="RegSetValueExW"/>
+</Module>
+<Module Name="Iphlpapi.dll">
+<Api Name="GetAdaptersInfo"/>
+</Module>
+<Interface Name="ISWbemDateTime">
+<Api Name="SetFileTime"/>
+</Interface>
+<Module Name="Kernel32.dll">
+<Api Name="CloseHandle"/>
+<Api Name="CopyFileA"/>
+<Api Name="CreateDirectoryA"/>
+<Api Name="CreateDirectoryExA"/>
+<Api Name="CreateFileA"/>
+<Api Name="CreateProcessA"/>
+<Api Name="CreateProcessW"/>
+<Api Name="CreateRemoteThread"/>
+<Api Name="CreateRemoteThreadEx"/>
+<Api Name="CreateThread"/>
+<Api Name="CreateToolhelp32Snapshot"/>
+<Api Name="GetComputerNameA"/>
+<Api Name="GetCurrentProcess"/>
+<Api Name="GetCurrentProcessId"/>
+<Api Name="GetCurrentThreadId"/>
+<Api Name="GetFileAttributesA"/>
+<Api Name="GetFileAttributesExA"/>
+<Api Name="GetLogicalDrives"/>
+<Api Name="GetModuleHandleA"/>
+<Api Name="GetModuleHandleExA"/>
+<Api Name="GetModuleHandleExW"/>
+<Api Name="GetModuleHandleW"/>
+<Api Name="GetProcAddress"/>
+<Api Name="GetSystemInfo"/>
+<Api Name="GetSystemTimeAsFileTime"/>
+<Api Name="InitializeSListHead"/>
+<Api Name="IsDebuggerPresent"/>
+<Api Name="IsProcessorFeaturePresent"/>
+<Api Name="OpenProcess"/>
+<Api Name="Process32First"/>
+<Api Name="Process32FirstW"/>
+<Api Name="Process32Next"/>
+<Api Name="Process32NextW"/>
+<Api Name="TerminateProcess"/>
+<Api Name="VirtualAlloc"/>
+<Api Name="VirtualAllocEx"/>
+<Api Name="VirtualFree"/>
+<Api Name="WinExec"/>
+<Api Name="WriteFile"/>
+<Api Name="WriteProcessMemory"/>
+</Module>
+<Module Name="ShLwApi.dll">
+<Api Name="PathFileExistsA"/>
+</Module>
+<Module Name="urlmon.dll">
+<Api Name="URLDownloadToFileA"/>
+<Api Name="URLDownloadToFileW"/>
+</Module>
+<Module Name="Winhttp.dll">
+<Api Name="WinHttpCloseHandle"/>
+<Api Name="WinHttpConnect"/>
+<Api Name="WinHttpOpen"/>
+<Api Name="WinHttpOpenRequest"/>
+<Api Name="WinHttpQueryHeaders"/>
+<Api Name="WinHttpReceiveResponse"/>
+<Api Name="WinHttpSendRequest"/>
+</Module>
+<Module Name="Wininet.dll">
+<Api Name="InternetWriteFileExA"/>
+<Api Name="InternetWriteFileExW"/>
+</Module>
+</CaptureFilter>
+</ApiMonitor>
